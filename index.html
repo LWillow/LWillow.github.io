@@ -154,29 +154,11 @@
             </div>
         </div>
     </div>
-    <div class="scare">
-        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"
-            loop="loop"></video>
-        <img src="https://count.getloli.com/get/@rickroll" style="display: none;">
-    </div>
-    <script type="text/javascript">
-        const video = document.getElementById("video");
-        const overlay = document.getElementById("overlay");
-        const declineButton = document.getElementById("decline-button");
-        const acceptButton = document.getElementById("accept-button");
-        let hasClicked;
-        window.onbeforeunload = function () {
-            if (hasClicked) return true;
-        };
         function buttonClick1(event) {
-            event.preventDefault();
-            if (!hasClicked) hasClicked = true;
-            overlay.hidden = true;
-            video.play();
-            videoClick();
+            window.location.href = 'https://www.qinav.xyz/'
         }
         function buttonClick2(event) {
-            window.location.href = 'https://www.bilibili.com/bangumi/play/ep30478'
+            window.location.href = 'https://www.bilibili.com/'
         }
         function videoClick(event) {
             if (event) event.preventDefault();
