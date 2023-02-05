@@ -161,17 +161,7 @@
         function buttonClick2(event) {
             window.location.href = 'https://www.bilibili.com/'
         }
-        function videoClick(event) {
-            if (event) event.preventDefault();
-            // if not fullscreen
-            const { documentElement } = document;
-            if (documentElement.requestFullscreen) documentElement.requestFullscreen();
-            else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
-            else if (documentElement.webkitRequestFullscreen) documentElement.webkitRequestFullscreen();
-            else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
-        }
         acceptButton.addEventListener("click", buttonClick1);
         declineButton.addEventListener("click", buttonClick2);
-        video.addEventListener("click", videoClick);
     </script>
 </body>
